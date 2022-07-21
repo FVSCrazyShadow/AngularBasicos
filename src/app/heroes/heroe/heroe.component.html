@@ -1,0 +1,23 @@
+<h1>Component HEROE</h1>
+
+<dl>
+    <td> Nombre: </td>
+    <dd>{{ nombre }}</dd>
+
+    <td> Edad: </td>
+    <dd>{{ edad }}</dd>
+
+    <td> Función: </td>
+    <dd>{{ obtenerNombre() }}</dd>
+
+    <td> Nombre en mayúsculas</td>
+    <dd>{{ nombreMayusculas }}</dd> <!-- Los gets no necesitan ()-->
+
+    <button (click)="cambiarHeroe()">
+        Cambiar Héroe
+    </button>
+
+    <button (click)="cambiarEdad()">
+        Cambiar Edad
+    </button>
+</dl>
