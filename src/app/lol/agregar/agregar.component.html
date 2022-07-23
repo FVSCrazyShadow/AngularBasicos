@@ -1,0 +1,13 @@
+<h3>Agregar {{ nuevo.Nombre }}</h3>
+<hr>
+
+<form (ngSubmit)="procesar()">
+    <!-- Importando el modulo form (FormModule) tenemos acceso a estos eventos (ngSubmit, etc) -->
+    <input type="text" placeholder="Nombre" name="Nombre" [(ngModel)]="nuevo.Nombre" />
+    <input type="number" placeholder="HP" name="Hp" [(ngModel)]="nuevo.Hp" />
+    <input type="number" placeholder="AD" name="Ad" [(ngModel)]="nuevo.Ad" />
+
+    <button type="submit">
+        Agregar
+    </button>
+</form>
